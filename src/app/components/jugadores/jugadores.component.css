@@ -5,18 +5,23 @@ h2 {
 a {
     text-decoration: none;
     color: black;
+    margin-bottom: 25px;
 }
 
 #container-main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    position: relative;
     width: 100%;
     height: auto;
     min-height: 73.2vh;
-    max-height: min-content;
+}
+
+#container-secondary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #player-link {
@@ -35,5 +40,5 @@ a {
 a:hover {
     box-shadow: 0 0 24px black, 0 0 16px black, 0 0 8px black;
     transition-duration: 0.3s;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
