@@ -33,13 +33,13 @@ h1 {
     min-width: 250px
 }
 
-@media(max-width: 499px) {
+@media(max-width: 500px) {
     header {
         justify-content: center;
     }
 }
 
-@media(max-width: 290px) {
+@media(max-width: 320px) {
     h1 {
         font-size: 24px;
     }

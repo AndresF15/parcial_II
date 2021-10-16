@@ -2,7 +2,7 @@ footer {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    position: absolute;
+    position: relative;
     bottom: 0;
     display: flex;
     justify-content: center;
@@ -19,7 +19,7 @@ h2 {
     font-size: 34px;
 }
 
-@media(max-width: 290px) {
+@media(max-width: 450px) {
     h2 {
         font-size: 24px;
     }
