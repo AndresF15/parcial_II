@@ -9,13 +9,15 @@ import { AppComponent } from './app.component';
 import { JugadoresComponent } from './components/jugadores/jugadores.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { JugadorComponent } from './components/jugadores/jugador/jugador.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     JugadoresComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    JugadorComponent
   ],
   imports: [
     BrowserModule,

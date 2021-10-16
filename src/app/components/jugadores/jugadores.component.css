@@ -21,6 +21,7 @@ a {
 #container-secondary {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row-reverse;
     justify-content: center;
 }
 
@@ -41,4 +42,16 @@ a:hover {
     box-shadow: 0 0 24px black, 0 0 16px black, 0 0 8px black;
     transition-duration: 0.3s;
     transform: scale(1.05);
+}
+
+@media (max-width: 991px) {
+    #title {
+        margin-top: 45px;
+    }
+}
+
+@media (max-width: 320px) {
+    #title h2 {
+        font-size: 24px;
+    }
 }
