@@ -28,4 +28,25 @@ p {
     height: auto;
     min-height: 20vh;
     margin-top: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.315);
+    padding-bottom: 5px;
+}
+
+.btn {
+    background-color: rgba(0, 0, 0, 0.829) !important;
+    margin: 10px 0 10px 0;
+    padding: 5px 30px 5px 30px;
+    font-size: 20px;
+}
+
+@media (max-width: 991px) {
+    #title {
+        margin-top: 45px;
+    }
+}
+
+@media (max-width: 320px) {
+    #title h2 {
+        font-size: 24px;
+    }
 }
