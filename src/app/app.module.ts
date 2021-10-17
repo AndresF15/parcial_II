@@ -10,6 +10,7 @@ import { JugadoresComponent } from './components/jugadores/jugadores.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { JugadorComponent } from './components/jugadores/jugador/jugador.component';
+import { JugadorDescripcionComponent } from './components/jugadores/jugador-descripcion/jugador-descripcion.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { JugadorComponent } from './components/jugadores/jugador/jugador.compone
     JugadoresComponent,
     HeaderComponent,
     FooterComponent,
-    JugadorComponent
+    JugadorComponent,
+    JugadorDescripcionComponent
   ],
   imports: [
     BrowserModule,

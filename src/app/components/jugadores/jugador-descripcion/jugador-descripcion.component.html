@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jugadores</title>
+</head>
+
+<body *ngFor="let jugador of jugadores">
+    <div id="container-main">
+        <div id="title">
+            <h2><b>Infografía {{jugador.nombre_pila}}</b></h2>
+        </div>
+        <img [src]="jugador.img">
+
+        <section id="player-description">
+            <b>Nombre: </b>"{{jugador.nombre}}" <br> <b>Bio: </b>"{{jugador.bio}}" <br><b>Img: </b>"{{jugador.img}}"<br><b>Nacimiento: </b>"{{jugador.nacimiento}}<br><b>Selección: </b>"{{jugador.seleccion}}" <br><b>Equipo: </b>"{{jugador.equipo}}"
+        </section>
+    </div>
+</body>
+
+</html>

@@ -1,11 +1,15 @@
 import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
+
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class JugadoresAndresFelipeHoyosService {
+  constructor() {}
 
-  private jugadores:Jugador[]=[
+  private jugadores:Jugadores[]=[
     {
       nombre: "James Rodriguez",
       nombre_pila: "James",
@@ -14,9 +18,9 @@ export class JugadoresAndresFelipeHoyosService {
       img_main: "assets/img/james-main.jpg",
       nacimiento: "12 de julio de 1991",
       seleccion:"Colombia",
-      equipo:"Everton"
+      equipo:"Everton",
     },
-{
+    {
       nombre: "Cristiano Ronaldo",
       nombre_pila: "Ronaldo",
       bio: "futbolista portugués que juega como delantero en el Manchester United Football Club de la Premier League de Inglaterra y en la selección de Portugal, de la cual es su capitán y máximo goleador histórico",
@@ -24,7 +28,7 @@ export class JugadoresAndresFelipeHoyosService {
       img_main: "assets/img/cristiano-main.jpg",
       nacimiento: "5 de febrero de 1985",
       seleccion:"Portugal",
-      equipo:"Manchester UNITED"
+      equipo:"Manchester UNITED",
     },
     {
       nombre: "Leonel Messi",
@@ -34,21 +38,66 @@ export class JugadoresAndresFelipeHoyosService {
       img_main: "assets/img/messi-main.jpg",
       nacimiento: " 24 de junio de 1987",
       seleccion:"Argentina",
-      equipo:"PSG"
+      equipo:"PSG",
     }
   ];
 
-  constructor() { 
-    console.log("Servicio listo para usar")
+
+  jugador:Jugador[]=[
+    {
+    nombre: "",
+    nombre_pila: "",
+    bio: "",
+    img: "",
+    img_main: "",
+    nacimiento: "",
+    seleccion:"",
+    equipo:"",
+  }
+  ];
+
+  getJugadores():Jugadores[]{
+    return this.jugadores
   }
 
-  getHeroes():Jugador[]{
-    return this.jugadores
+  getJugador(nombre:String):Jugador[]{
+    console.log(nombre)
+    for (let jugador of this.jugadores){
+      if (jugador.nombre == nombre){
+          this.jugador = [
+          {
+            nombre: jugador.nombre,
+            nombre_pila: jugador.nombre_pila,
+            bio: jugador.bio,
+            img: jugador.img,
+            img_main: jugador.img_main,
+            nacimiento: jugador.nacimiento,
+            seleccion:jugador.seleccion,
+            equipo: jugador.equipo,
+          }
+        ]
+        
+        console.log(this.jugador)
+        return this.jugador
+      } 
+    }
+    return this.jugador
   }
 
 }
 
 export interface Jugador{
+  nombre: String
+  nombre_pila: String
+  bio: String
+  img: String
+  img_main: String
+  nacimiento: String
+  seleccion: String
+  equipo: String
+}
+
+export interface Jugadores{
   nombre: String
   nombre_pila: String
   bio: String

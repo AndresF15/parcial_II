@@ -1,0 +1,31 @@
+h2 {
+    text-align: center;
+}
+
+p {
+    color: black;
+    margin-bottom: 25px;
+}
+
+#container-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 73.2vh;
+}
+
+#title {
+    padding-bottom: 30px;
+    min-height: 50px;
+}
+
+#player-description {
+    width: 100%;
+    height: auto;
+    min-height: 20vh;
+    margin-top: 20px;
+}
