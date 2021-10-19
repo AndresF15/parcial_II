@@ -42,59 +42,10 @@ export class JugadoresAndresFelipeHoyosService {
     }
   ];
 
-
-  jugador:Jugador[]=[
-    {
-    nombre: "",
-    nombre_pila: "",
-    bio: "",
-    img: "",
-    img_main: "",
-    nacimiento: "",
-    seleccion:"",
-    equipo:"",
-  }
-  ];
-
   getJugadores():Jugadores[]{
     return this.jugadores
   }
 
-  getJugador(nombre:String):Jugador[]{
-    console.log(nombre)
-    for (let jugador of this.jugadores){
-      if (jugador.nombre == nombre){
-          this.jugador = [
-          {
-            nombre: jugador.nombre,
-            nombre_pila: jugador.nombre_pila,
-            bio: jugador.bio,
-            img: jugador.img,
-            img_main: jugador.img_main,
-            nacimiento: jugador.nacimiento,
-            seleccion:jugador.seleccion,
-            equipo: jugador.equipo,
-          }
-        ]
-        
-        console.log(this.jugador)
-        return this.jugador
-      } 
-    }
-    return this.jugador
-  }
-
-}
-
-export interface Jugador{
-  nombre: String
-  nombre_pila: String
-  bio: String
-  img: String
-  img_main: String
-  nacimiento: String
-  seleccion: String
-  equipo: String
 }
 
 export interface Jugadores{
